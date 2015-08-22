@@ -1,0 +1,70 @@
+1
+00:00:00,500 --> 00:00:06,500
+第一个问题：XML 元素的名字在这里：TextView
+The answer to the first question is that the XML element name is here, TextView.
+
+2
+00:00:06,500 --> 00:00:10,120
+在左尖括号的后面
+It follows the open angle bracket.
+
+3
+00:00:10,120 --> 00:00:13,195
+随后 所有的属性都在XML元素的下方
+Then, all the attributes are below the XML element name, and
+
+4
+00:00:13,195 --> 00:00:15,750
+我在此已经用下划线标注出了这些属性的名称
+I've underlined the attribute names here.
+
+5
+00:00:15,750 --> 00:00:17,960
+它们在等号的左边
+They're on the left hand side of the equal sign.
+
+6
+00:00:17,960 --> 00:00:22,330
+它们包括 android:text android:textColor 等等
+They include android:text, android:textColor, and so on.
+
+7
+00:00:22,330 --> 00:00:25,440
+如果你填写的是属性值 如"Happy Birthday"或者"color/white"
+If you put the attribute values, like Happy Birthday or the color/white or
+
+8
+00:00:25,440 --> 00:00:28,870
+或是"black" 这是错的 因为他们是属性值
+black, that's incorrect, because those are the attribute values, and
+
+9
+00:00:28,870 --> 00:00:31,450
+而问的问题是属性名称
+it's asking for the names.
+
+10
+00:00:31,450 --> 00:00:34,540
+最后一个问题是 标签在哪一行结束？
+The last question is, on what line number is a tag closed?
+
+11
+00:00:34,540 --> 00:00:36,020
+我们可以看到斜杠
+Then we see the forward slash and
+
+12
+00:00:36,020 --> 00:00:39,960
+和右尖括号在最后一行 那是第六行
+the closing angle bracket on the last line, which is line 6.
+
+13
+00:00:39,960 --> 00:00:42,150
+这就是说 这是一个自关闭标签
+This means that it's a self-closing tag,
+
+14
+00:00:42,150 --> 00:00:42,155
+因为我们在这里开始标签 并在这里立刻关闭了它
+because we open the text view tag here and then we close it right away.
+
