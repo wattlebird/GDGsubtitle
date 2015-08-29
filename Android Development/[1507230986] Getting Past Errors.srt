@@ -1,189 +1,236 @@
 1
 00:00:00,540 --> 00:00:04,430
+我们让你在上一个问题中制造一个错误并修正它的原因
 The reason why we asked you the last question about creating an error and
 
 2
 00:00:04,430 --> 00:00:08,570
+是这对于开发者来说是一个重要技能
 fixing the error is because an important skill of developers
 
 3
 00:00:08,570 --> 00:00:11,330
+那就是修正错误
 is to be able to get past errors.
 
 4
 00:00:11,330 --> 00:00:14,255
+没有一个开发者能够在第一次就写出完美无缺的代码
 There's no developer who writes code perfectly the first time.
 
 5
 00:00:14,255 --> 00:00:15,875
+仔细想一想
 If you think about it,
 
 6
 00:00:15,875 --> 00:00:20,765
+所有的 Google 搜索服务产品都不是在一天里写成的
 the whole Google search product was not written in one day perfectly.
 
 7
 00:00:20,765 --> 00:00:25,765
+它需要需多年的反复修改 以前如此 以后仍然如此
 It was a lot of iteration over many years, and it continues to be.
 
 8
 00:00:25,765 --> 00:00:30,203
+因此 无论你是一个新手开发者或有经验的开发者
 So, regardless of whether you're a new developer or you're an experienced
 
 9
 00:00:30,203 --> 00:00:34,794
+完成目标并不是一帆风顺的
 developer, in order to get to the end goal, it's not exactly a straight path.
 
 10
 00:00:34,794 --> 00:00:39,087
+你会在途中遇到各种各样的障碍 你得在其中展示出创造性
 You'll run into obstacles along the way, and you have to be really creative in
 
 11
 00:00:39,087 --> 00:00:43,650
+以克服这些困难
 terms of trying to come up with other solutions to go around that obstacle.
 
 12
 00:00:43,650 --> 00:00:47,880
+一旦你克服了 你会遇到另外的障碍 如此这般
 So once you get around it, then you'll run into another obstacle and so on.
 
 13
 00:00:47,880 --> 00:00:50,860
+你会一直思索解决问题
 And you just always want to keep thinking of ways to get
 
 14
 00:00:50,860 --> 00:00:52,640
+的方法
 around that obstacle.
 
 15
 00:00:52,640 --> 00:00:59,680
+最终 你找到了一条到达目标的路径
 And eventually, after a lot of work, you finally find the path to the goal, and
 
 16
 00:00:59,680 --> 00:01:03,400
+尽管历经坎坷 这仍然是物超所值的
 even though it was super challenging, it was totally worth it in the end because
 
 17
 00:01:03,400 --> 00:01:08,060
+你会信心百倍并为你完成的工作而自豪
 you feel empowered and confident and just really proud of your work.
 
 18
 00:01:08,060 --> 00:01:11,700
+真正优秀的开发者知道如何从错误中学习
 So the really good developers know how to rebound from an error and
 
 19
 00:01:11,700 --> 00:01:13,220
+并继续他们的工作
 continue with their work.
 
 20
 00:01:13,220 --> 00:01:14,330
+这些是一些用于调试、解决错误的
 So here are some habits and
 
 21
 00:01:14,330 --> 00:01:19,810
+习惯和策略
 strategies that they use to debug, or fix, their errors.
 
 22
 00:01:19,810 --> 00:01:21,920
+首先阅读错误信息
 First they read the error message.
 
 23
 00:01:21,920 --> 00:01:24,770
+当你在 Google Docs 中写文档时
 When you're writing a document in Google Docs, for example,
 
 24
 00:01:24,770 --> 00:01:29,280
+如果有拼写错误 它会用红色下划线提示
 if there's any misspellings, then it will tell you with a red underline.
 
 25
 00:01:29,280 --> 00:01:34,250
+相似地 在Android Studio里 如果你写错了XML
 Similarly in Android Studio, if you have typed XML incorrectly, then
 
 26
 00:01:34,250 --> 00:01:38,810
+会有一条红色下划波浪线 或者错误会被标红
 it will have a red, squiggly underline, or it will be highlighted in red.
 
 27
 00:01:38,810 --> 00:01:40,866
+而且在这边的边栏
 Also, in this bar on the side here,
 
 28
 00:01:40,866 --> 00:01:44,169
+如果你放在红色柱条上它会给你显示信息
 it will show you the message if you hover over the red bar.
 
 29
 00:01:44,169 --> 00:01:48,871
+在我们的XML可视化器里面 也会有有帮助的错误信息
 But in our XML Visualizer, there's also helpful error messages.
 
 30
 00:01:48,871 --> 00:01:52,996
+因此当我们制造一个错误的时候 比如说移除这个引号
 So if I create an error, like removing this quotation mark, it will tell me
 
 31
 00:01:52,996 --> 00:01:57,350
+它会告诉我引号没有配对 我需要修正
 that there's an uneven number of quotes and that I need to fix it.
 
 32
 00:01:57,350 --> 00:02:00,630
+有时 它也会告诉你出现问题所在的行
 Sometimes, it also tells you the line number that the problem is on.
 
 33
 00:02:00,630 --> 00:02:03,320
+行号在左手边
 The line numbers are on the left hand side here.
 
 34
 00:02:03,320 --> 00:02:06,320
+在第六行我们知道有一个问题
 So, on line six, we know that there's a problem.
 
 35
 00:02:06,320 --> 00:02:10,370
+这有助于我们精确定位错误所在位置而非通读全部代码
 This helps narrow down the problem space instead of having to read through all
 
 36
 00:02:10,370 --> 00:02:13,210
+才得以搞清楚错误
 your code and trying to figure out what the problem is.
 
 37
 00:02:13,210 --> 00:02:15,720
+如果你仍然不知道错误信息
 If you still don't understand the error message, try to
 
 38
 00:02:15,720 --> 00:02:19,780
+试图找出你知道意思的词和你不知道意思的词
 identify words that you do understand and the words that you don't understand.
 
 39
 00:02:19,780 --> 00:02:24,170
+你可以 Google 你不知道意思的词
 You can always Google search for the words that you don't understand, or you
 
 40
 00:02:24,170 --> 00:02:28,440
+或者直接把错误信息贴在 google 里搜
 can just copy the whole error message and paste that into a Google search.
 
 41
 00:02:28,440 --> 00:02:31,150
+另一个技巧就是使用可以正常运行的样例代码
 The other technique is to use working code samples and
 
 42
 00:02:31,150 --> 00:02:34,970
+并与你的代码比较 看看哪里有问题
 compare it to what you have to try to figure out what went wrong.
 
 43
 00:02:34,970 --> 00:02:38,310
+我们已经在先前几个视频中给你了一些代码
 We've already given you some code to look at in the last few videos, and
 
 44
 00:02:38,310 --> 00:02:41,458
+还有一个好的资源是常见Android View速查表
 another good resource is the Common Android Views cheat sheet that
 
 45
 00:02:41,458 --> 00:02:42,960
+我们会把它给你
 we'll provide you.
 
 46
 00:02:42,960 --> 00:02:47,320
+这里 我们会看到不同的 view 的名字和代码片段
 Here, we see the names of different views, and we also have code snippets as
 
 47
 00:02:47,320 --> 00:02:49,470
+还有它们在设备上的预览
 well as a preview of what they would look like on the device.
 
 48
@@ -333,4 +380,3 @@ Then come back and describe at least two problems that you saw.
 84
 00:04:45,870 --> 00:04:45,875
 For extra credit, tell me if you discovered all four problems.
-
