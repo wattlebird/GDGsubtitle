@@ -235,148 +235,185 @@ well as a preview of what they would look like on the device.
 
 48
 00:02:49,470 --> 00:02:53,120
+你总是可以把你的代码和这边的代码比较
 You can always compare your code to what we have here and
 
 49
 00:02:53,120 --> 00:02:55,170
+查看是否有不同之处
 see if there's any differences.
 
 50
 00:02:55,170 --> 00:02:56,800
+第三个技巧是使用撤销
 The third technique is to use undo.
 
 51
 00:02:56,800 --> 00:02:59,240
+如果在码代码的时候留点心
 If you're paying attention when you type,
 
 52
 00:02:59,240 --> 00:03:03,430
+你打错东西的时候你很快就会发现
 you should be able to see pretty quickly when you type something wrong.
 
 53
 00:03:03,430 --> 00:03:08,400
+试着撤销刚刚键入的几个键 看看是否修正了错误
 Try undoing the last few keystrokes to see if any of those fixed the error.
 
 54
 00:03:08,400 --> 00:03:12,385
+正如我们先前所展示的 你可以按Cmd+Z撤销一个改动
 As we showed you before, you can hit Cmd+Z to undo a change or
 
 55
 00:03:12,385 --> 00:03:15,470
+或Cmd+Shift+Z反悔你所撤销的改动（重做）
 Cmd+Shift+Z to redo a change.
 
 56
 00:03:15,470 --> 00:03:20,965
+在Windows里 撤销是Ctrl+Z 重做是Ctrl+Shift+Z
 On Windows, it's Ctrl+Z to undo and Ctrl+Shift+Z to redo.
 
 57
 00:03:20,965 --> 00:03:25,725
+或者在XML可视化器里 我们有便捷的按钮方便撤销和重做
 Or in the XML visualizer, we have these nice handy buttons for undo and redo.
 
 58
 00:03:25,725 --> 00:03:29,477
+如果你不知道你该做什么 你总是可以按这个Reset Code（重置代码）按钮
 If you really don't know what to do, you can always hit this Reset Code button,
 
 59
 00:03:29,477 --> 00:03:32,127
+它把代码恢复成原样
 which brings you back to the original code that we gave you,
 
 60
 00:03:32,127 --> 00:03:33,867
+以保证它是可以运行的
 which should work.
 
 61
 00:03:33,867 --> 00:03:37,167
+第四个技巧就是寻求帮助
 The fourth technique is to just ask for help.
 
 62
 00:03:37,167 --> 00:03:40,527
+你可以在课程群聊中接触到其他学生
 You can reach out to other students on the peer chat in the lesson or
 
 63
 00:03:40,527 --> 00:03:42,242
+或在论坛里找到
 on the forums.
 
 64
 00:03:42,242 --> 00:03:44,697
+通常 和另一个人交流
 Oftentimes, just talking to another person will
 
 65
 00:03:44,697 --> 00:03:46,817
+就可以帮助你解决问题
 help you work out your errors.
 
 66
 00:03:46,817 --> 00:03:48,097
+不要害怕问问题
 Don't be afraid to ask for help.
 
 67
 00:03:48,097 --> 00:03:51,559
+有许多热心的Android开发者在社区里
 There's a lot of really nice Android developers out in the community who
 
 68
 00:03:51,559 --> 00:03:53,880
+愿意帮助你
 are willing to help you.
 
 69
 00:03:53,880 --> 00:03:58,200
+事实上 学会寻求帮助是开发者一个重要技能
 In fact, being able to ask for help is an important skill for developers.
 
 70
 00:03:58,200 --> 00:04:00,550
+没有所谓坏的问题
 There are no bad questions.
 
 71
 00:04:00,550 --> 00:04:05,070
+问得越多 你就会越清楚该向谁问
 The more you practice the better you'll be at knowing who to ask and
 
 72
 00:04:05,070 --> 00:04:08,290
+问些什么 以使得你更快地得到答案
 what to ask them in order to help you get to your answer faster.
 
 73
 00:04:08,290 --> 00:04:12,800
+你可以为你的工作拍一张快照
 You can also take a screenshot of the work that you're doing, whether it's
 
 74
 00:04:12,800 --> 00:04:17,660
+可以是在设备上或XML可视化器里 然后附上代码
 on the phone or in the XML Visualizer, and share that along with the code
 
 75
 00:04:17,660 --> 00:04:22,780
+这样在论坛里或在聊天时人们就会知道你所处的境况
 on the forums or in chat so that people know the context in which you're asking.
 
 76
 00:04:22,780 --> 00:04:25,580
+请查看教师笔记以获取更多信息
 Check out the instructor notes for more details.
 
 77
 00:04:25,580 --> 00:04:29,260
+好 现在有一个可以让你练习这些技巧的机会
 Okay, so here's a chance for you to practice some of those techniques.
 
 78
 00:04:29,260 --> 00:04:31,540
+现在有一些代码有错误
 I have some code here that has errors.
 
 79
 00:04:31,540 --> 00:04:34,640
+如果你点开下面的链接 你就会被带往XML可视化器
 If you click on the link below, it will bring you to the XML Visualizer
 
 80
 00:04:34,640 --> 00:04:37,240
+代码就会出现在那里
 with this code already populated in there.
 
 81
 00:04:37,240 --> 00:04:40,010
+有一堆错误信息 我想要你阅读这些信息
 There's a bunch of error messages, so I want you to try to read them and
 
 82
 00:04:40,010 --> 00:04:41,790
+并试着去解决它们
 try to resolve the errors.
 
 83
 00:04:41,790 --> 00:04:45,870
+然后回来描述至少两个你所看见的错误
 Then come back and describe at least two problems that you saw.
 
 84
 00:04:45,870 --> 00:04:45,875
+如果你发现了四个错误 会有额外奖励 
 For extra credit, tell me if you discovered all four problems.
