@@ -25,7 +25,7 @@ We've been making a guest list so far for the party.
 
 6
 00:00:11,930 --> 00:00:14,010
-—— 哇哦 我觉得那真的很害羞(small)
+—— 哇哦 我觉得那真的很害羞(feel small)
 &gt;&gt; Wow, I feel really small about that.
 
 7
@@ -145,142 +145,177 @@ And the next one we're going to try out is
 
 30
 00:01:06,780 --> 00:01:10,160
+这里是几个线性布局中设定不同宽度
 Here are some examples of how setting different widths on the child views
 
 31
 00:01:10,160 --> 00:01:13,770
+最终影响到用户界面的例子
 in a linear layout can affect the final user interface.
 
 32
 00:01:13,770 --> 00:01:19,070
+这个例子中我们把每个子元素的View宽度设定为200dp
 In this example we set each child view to have a fixed width of 200 dp.
 
 33
 00:01:19,070 --> 00:01:22,590
+如果每个View里的内容大于200dp
 If the content inside each view is greater than 200 DP
 
 34
 00:01:22,590 --> 00:01:26,330
+你就会冒有部分内容被截断的风险
 then you run risk of cutting some content off like this.
 
 35
 00:01:26,330 --> 00:01:31,600
+这个例子中我们设置每个子元素的View宽度包围内容
 In this example we set each child view to have a width a wrap content.
 
 36
 00:01:31,600 --> 00:01:33,500
+现在所有的内容都被显示出来了
 Now all the content content is shown, but
 
 37
 00:01:33,500 --> 00:01:38,090
+但是每个View的宽度随着内容的不一致而不一致
 the width of each view really varies based on what's inside each view.
 
 38
 00:01:38,090 --> 00:01:42,020
+这个例子中 我们设置每个子元素的View和父元素保持一致
 In this example, we set the width of each child view to be match parent.
 
 39
 00:01:42,020 --> 00:01:46,650
+现在你可以看见每个子元素的宽度和父元素的一样
 Now you see that the width of each child is as wide as the parent view group.
 
 40
 00:01:46,650 --> 00:01:49,680
+无关其内容
 Regardless of the content inside of it.
 
 41
 00:01:49,680 --> 00:01:54,070
+现在这些值也可以被应用于每个View的高度
 Now those same values can also be applied for the height of each view.
 
 42
 00:01:54,070 --> 00:01:59,240
+这个例子中我们把每个子元素的高度设置为200dp
 In this example we set the height of this child text view to be 200 dp.
 
 43
 00:01:59,240 --> 00:02:01,570
+如果内容本身高度大于200dp
 If the content inside it is taller than that.
 
 44
 00:02:01,570 --> 00:02:05,400
+你就有可能截断部分内容
 Then you run the risk of cutting off some of the content.
 
 45
 00:02:05,400 --> 00:02:09,919
+在这个例子中 我们设置每个子元素的高度包围内容
 In this example, we set the height of the child text view to be wrap content.
 
 46
 00:02:09,919 --> 00:02:12,040
+这样 所有内容就会被显示在屏幕上
 That way all the content will be displayed on screen and
 
 47
 00:02:12,040 --> 00:02:15,650
+而且没有截断 因为TextView的高度决定于其
 nothing will be cut off because the size of the text view is dependent
 
 48
 00:02:15,650 --> 00:02:17,940
+里面的内容
 on the content inside of it.
 
 49
 00:02:17,940 --> 00:02:22,790
+这个例子中 我们设置每个子元素的高度与父元素一致
 In this example, we set the height of the child text view to be match parent.
 
 50
 00:02:22,790 --> 00:02:25,300
+这样子View就会和父元素一样高
 That way the child view is as tall as the parent itself,
 
 51
 00:02:25,300 --> 00:02:27,730
+而无视其内部内容
 regardless of the content inside it.
 
 52
 00:02:27,730 --> 00:02:29,980
+我们现在打开XML可视化器
 Let's open the XML visualizer now and
 
 53
 00:02:29,980 --> 00:02:32,980
+试着在代码里面做这些
 try to be more like our parents in the code.
 
 54
 00:02:32,980 --> 00:02:36,670
+我们在下面的教师笔记中提供了XML可视化器的链接
 We're providing you a link to the XML visualizer with some starter code
 
 55
 00:02:36,670 --> 00:02:39,050
+还有一些初始代码
 in the instructor notes below.
 
 56
 00:02:39,050 --> 00:02:41,570
+在本例中 线性布局是根View
 In this case, the LinearLayout is the root view
 
 57
 00:02:41,570 --> 00:02:45,580
+因为他是第一个和最外面的View
 of this layout because it's the first and outermost view.
 
 58
 00:02:45,580 --> 00:02:49,390
+如果我们为根View的高度和宽度设置match_parent
 If we set match_parent for the width and height of this root view, and
 
 59
 00:02:49,390 --> 00:02:51,870
+并把这种布局设置为主要布局
 we set this as the main layout of our app,
 
 60
 00:02:51,870 --> 00:02:56,840
+那么这个线性布局就会和设备的高和宽一致
 then this linear layout will be as tall and wide as the device screen.
 
 61
 00:02:56,840 --> 00:03:00,300
+我可以通过设置这个线性布局的背景为非透明
 I can show you by setting the background of this linear layout
 
 62
 00:03:00,300 --> 00:03:04,400
+让你看得更清楚
 to be a non-transparent color.
 
 63
 00:03:04,400 --> 00:03:07,100
+如果我设置了一个灰色的背景
 If I set a gray background color on this linear layout Then,
 
 64
 00:03:07,100 --> 00:03:11,660
+你就会看到灰色占据了整个设备的高和宽
 you can see how the gray extends the full width and height of the device.
 
 65
