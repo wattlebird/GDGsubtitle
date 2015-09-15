@@ -30,7 +30,7 @@ We've been making a guest list so far for the party.
 
 7
 00:00:14,010 --> 00:00:15,160
-—— 那么 说到small
+—— 那么 说到小(small)
 &gt;&gt; Well, speaking about small,
 
 8
@@ -50,7 +50,7 @@ let's talk about the size of views on a screen.
 
 11
 00:00:23,720 --> 00:00:25,640
-而且我们也可以设定View紧密包含内容
+而且我们也可以设定View紧密包含内容(wrap_context)
 And we could also set, wrap content, with view.
 
 12
@@ -75,7 +75,7 @@ the view grows large, the content is small and the view grows small.
 
 16
 00:00:32,880 --> 00:00:35,300
-—— 是的 然而还有第三种 叫做“匹配父元素”(match parent)
+—— 是的 然而还有第三种 叫做“匹配父元素”(match_parent)
 &gt;&gt; Yeah, and there's actually a third one which is called, match parent.
 
 17
@@ -170,7 +170,7 @@ then you run risk of cutting some content off like this.
 
 35
 00:01:26,330 --> 00:01:31,600
-这个例子中我们设置每个子元素的View宽度包围内容
+这个例子中我们设置每个子元素的View宽度为wrap_content
 In this example we set each child view to have a width a wrap content.
 
 36
@@ -185,7 +185,7 @@ the width of each view really varies based on what's inside each view.
 
 38
 00:01:38,090 --> 00:01:42,020
-这个例子中 我们设置每个子元素的View和父元素保持一致
+这个例子中 我们设置每个子元素的View为match_parent
 In this example, we set the width of each child view to be match parent.
 
 39
@@ -220,7 +220,7 @@ Then you run the risk of cutting off some of the content.
 
 45
 00:02:05,400 --> 00:02:09,919
-在这个例子中 我们设置每个子元素的高度包围内容
+在这个例子中 我们设置每个子元素为wrap_content
 In this example, we set the height of the child text view to be wrap content.
 
 46
@@ -240,7 +240,7 @@ on the content inside of it.
 
 49
 00:02:17,940 --> 00:02:22,790
-这个例子中 我们设置每个子元素的高度与父元素一致
+这个例子中 我们设置每个子元素的高度为match_parent
 In this example, we set the height of the child text view to be match parent.
 
 50
@@ -320,125 +320,155 @@ you can see how the gray extends the full width and height of the device.
 
 65
 00:03:11,660 --> 00:03:13,370
+现在 如果我改变这些TextView的宽度和高度为match_parent
 Now, what happens if I try to change the width or
 
 66
 00:03:13,370 --> 00:03:15,980
+将会发生什么？
 height of these text views to be match parent?
 
 67
 00:03:15,980 --> 00:03:18,450
+为了搞清楚每个View的边界
 To make it clear where the bounds of each view are,
 
 68
 00:03:18,450 --> 00:03:21,510
+我将为每一个View设置背景颜色
 I'm going to set a background color on each of the views.
 
 69
 00:03:21,510 --> 00:03:25,660
+现在我把这个TextView设置为match_parent
 Now I'm going to change the height of this text view to be match parent.
 
 70
 00:03:25,660 --> 00:03:28,270
+顺便说一句 它的拼写是match_parent
 By the way, you spell it match_parent.
 
 71
 00:03:28,270 --> 00:03:32,530
+现在你可以看到这个TextView占据了父元素的全部高度
 And now you see that this text view takes up the full height of the parent.
 
 72
 00:03:32,530 --> 00:03:35,550
+不幸的是 它把所有其他的东西都推到了屏幕外面
 Unfortunately, it pushes everything else off the screen, so
 
 73
 00:03:35,550 --> 00:03:36,580
+我们不希望看到这些
 we don't really want that.
 
 74
 00:03:36,580 --> 00:03:39,330
+那么我们就把它换回wrap_content
 So let's change it back to wrap content.
 
 75
 00:03:39,330 --> 00:03:39,950
+好
 Okay.
 
 76
 00:03:39,950 --> 00:03:43,750
+我们把宽度改成match_parent 看看会有什么变化
 So let's change the width now to be match parent and see what it does.
 
 77
 00:03:43,750 --> 00:03:48,580
+现在TextView的宽度就和父元素一样了 也就是说
 Now the width of the TextView is as wide as the parent, which in turn,
 
 78
 00:03:48,580 --> 00:03:51,750
+和设备屏幕的宽度一样
 is as wide as the device screen.
 
 79
 00:03:51,750 --> 00:03:54,940
+如果我把其他TextView也换成match_parent
 If I change the other TextViews to also be match_parent
 
 80
 00:03:54,940 --> 00:03:58,610
+你可以看见它也开始占据了父元素的全部宽度
 You can see that it also starts to take up the full width of the parent.
 
 81
 00:03:58,610 --> 00:04:01,740
+我也想指出另外一件事
 I also want to point out one more thing.
 
 82
 00:04:01,740 --> 00:04:04,860
+每当你看见以"layout_"开头的属性名称
 Every time you see an attribute that starts with layout underscore, like
 
 83
 00:04:04,860 --> 00:04:10,080
+如layout_height或layout_width 这些是视图组(view group)的布局信息
 layout height or layout width, these are actually view group layout parameters.
 
 84
 00:04:10,080 --> 00:04:13,480
+他们也被父视图组(view group)使用以确定
 These are used by the parent view group to determine the size and
 
 85
 00:04:13,480 --> 00:04:16,190
+View的尺寸和位置
 the position of these views.
 
 86
 00:04:16,190 --> 00:04:19,110
+同时 其他属性 诸如背景 文字大小
 Meanwhile, the other attributes like background, text size, and
 
 87
 00:04:19,110 --> 00:04:23,630
+和文字由TextView本身处理以自定义它的风格
 text are handled by the TextView in terms of styling its own view.
 
 88
 00:04:23,630 --> 00:04:27,360
+但是这些视图组(view group)的布局参数由其父元素处理
 But these view group layout parameters are handled by the parent.
 
 89
 00:04:27,360 --> 00:04:30,460
+现在 该由你来试试不同的宽度和高度值了
 Now it's your turn to try different width and height values.
 
 90
 00:04:30,460 --> 00:04:33,890
+下面的教师笔记
 For the link to the XML visualizer with some starter code,
 
 91
 00:04:33,890 --> 00:04:35,820
+有配备初始代码的XML可视化器
 see the instructor notes below.
 
 92
 00:04:35,820 --> 00:04:38,970
+试着去改变每个TextView的宽度和高度
 Try to change the width and height values of each TextView.
 
 93
 00:04:38,970 --> 00:04:43,270
+你可以设置一个既定的dp值 或warp_content match_parent
 You can set a fixed dp value, wrap-content, or match_parent.
 
 94
 00:04:43,270 --> 00:04:46,730
+记住 每个View的宽度和高度不一定要一致
 Remember that for each view, the width and height values don't have to match.
 
 95
 00:04:46,730 --> 00:04:46,735
+当你完成之时 点选这个方框以继续
 When you're done, check this box to continue.
-
