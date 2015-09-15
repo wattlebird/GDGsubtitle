@@ -1,60 +1,75 @@
 1
 00:00:00,820 --> 00:00:04,040
+若你打开在教师笔记中的XML可视化器的链接
 If you open up the link to the XML visualizer, that we provided
 
 2
 00:00:04,040 --> 00:00:07,390
+这就是你将看到的
 you in the instructor notes, then this is what it would look like.
 
 3
 00:00:07,390 --> 00:00:10,410
+我们有一个线性布局 里面有显示为Guest List的TextView
 We have a linear layout with a text view that says Guest List and
 
 4
 00:00:10,410 --> 00:00:12,570
+和显示为Kunal的TextView
 another text view that says Kunal.
 
 5
 00:00:12,570 --> 00:00:17,020
+第一个任务是在Guest List下加入更多的TextView
 The first task was to add more text views to create the guest list.
 
 6
 00:00:17,020 --> 00:00:20,780
+那么我们就复制粘贴这个XML元素
 So let's copy and paste this XML element.
 
 7
 00:00:20,780 --> 00:00:24,090
+好 现在加入一些其他人
 Cool, let's add some other people besides Kunal.
 
 8
 00:00:24,090 --> 00:00:27,710
+我们加入Kagure和Lyla
 Let's add Kagure and also Lyla.
 
 9
 00:00:27,710 --> 00:00:28,570
+棒
 Awesome.
 
 10
 00:00:28,570 --> 00:00:31,900
+那么现在Kagure和Lyla在Kunal的名字下面
 So now Kagure and Lyla show up under Kunal's name.
 
 11
 00:00:31,900 --> 00:00:34,400
+我们也可以改变任何现成的文字
 We can also change any of the existing text use.
 
 12
 00:00:34,400 --> 00:00:37,220
+我们把它变成VIP名单
 We change to the VIP list.
 
 13
 00:00:37,220 --> 00:00:42,120
+第二个任务是把方向属性改成水平的
 The second task was to change the orientation attribute to be horizontal.
 
 14
 00:00:42,120 --> 00:00:45,770
+这立刻把所有的TextView从纵向排列
 This immediately changes all the text views to appear side by side
 
 15
 00:00:45,770 --> 00:00:45,775
+改为并排的
 instead of one on top of the other.
 

@@ -1,117 +1,146 @@
 1
 00:00:00,300 --> 00:00:02,670
+我们到目前为止一直在为派对制作客人名单
 We've been making a guest list so far for the party.
 
 2
 00:00:02,670 --> 00:00:05,660
+—— 等等 这个是为生日派对准备的客人名单 是吗 凯瑟琳？
 &gt;&gt; Wait, this is the guest list for the birthday party, right, Catherine?
 
 3
 00:00:05,660 --> 00:00:06,700
+—— 是啊
 &gt;&gt; Yeah.
 
 4
 00:00:06,700 --> 00:00:09,140
+—— 我希望我也能在名单上
 &gt;&gt; I really hope I'm on this list.
 
 5
 00:00:09,140 --> 00:00:11,930
+—— 好吧 让我们研究一下
 &gt;&gt; Well, we'll have to see about that.
 
 6
 00:00:11,930 --> 00:00:14,010
+—— 哇哦 我觉得那真的很害羞(small)
 &gt;&gt; Wow, I feel really small about that.
 
 7
 00:00:14,010 --> 00:00:15,160
+—— 那么 说到small
 &gt;&gt; Well, speaking about small,
 
 8
 00:00:15,160 --> 00:00:18,010
+我们讨论一下屏幕上View的尺寸大小
 let's talk about the size of views on a screen.
 
 9
 00:00:18,010 --> 00:00:21,180
+—— 哦 我们已经用了既定的高度 用dp表示的 不是吗？
 &gt;&gt; Oh, we've used the fixed written height, which is the dp, right?
 
 10
 00:00:21,180 --> 00:00:23,720
+—— 是的 高度和宽度都是
 &gt;&gt; Yeah, the width and height.
 
 11
 00:00:23,720 --> 00:00:25,640
+而且我们也可以设定View紧密包含内容
 And we could also set, wrap content, with view.
 
 12
 00:00:25,640 --> 00:00:28,275
+—— 没错 View把自己围绕着内容包紧
 &gt;&gt; Right, which is a strange way of saying that the view is going to
 
 13
 00:00:28,275 --> 00:00:29,684
+实在是一种奇怪的说法
 wrap itself around the content.
 
 14
 00:00:29,684 --> 00:00:30,549
+应该是当内容变大
 So the content grows large,
 
 15
 00:00:30,549 --> 00:00:32,880
+View也会变大 内容变小 View也会变小
 the view grows large, the content is small and the view grows small.
 
 16
 00:00:32,880 --> 00:00:35,300
+—— 是的 然而还有第三种 叫做“匹配父元素”(match parent)
 &gt;&gt; Yeah, and there's actually a third one which is called, match parent.
 
 17
 00:00:35,300 --> 00:00:37,930
+—— 听起来很奇怪
 &gt;&gt; That seems a little strange.
 
 18
 00:00:37,930 --> 00:00:41,840
+听起来像单身父母的约会网站
 That sounds like a dating website for single parents.
 
 19
 00:00:41,840 --> 00:00:42,600
+—— 并不
 &gt;&gt; Not quite.
 
 20
 00:00:42,600 --> 00:00:47,370
+和父元素匹配是说View的高或宽会和父元素一样
 Match parent means that the view will be As wide or as tall as the parent.
 
 21
 00:00:47,370 --> 00:00:48,446
+—— 哦 这样就说得通了
 &gt;&gt; Oh, so that makes sense.
 
 22
 00:00:48,446 --> 00:00:51,400
+我是一个View 我有一个父元素而且
 I am a view, I have a parent and my width and
 
 23
 00:00:51,400 --> 00:00:53,840
+我的高度和我的宽度将会和父元素保持一致
 height is going to be the same as my parent.
 
 24
 00:00:53,840 --> 00:00:55,920
+好 —— 准确地说
 Okay. &gt;&gt; Exactly, so that's to summarize,
 
 25
 00:00:55,920 --> 00:00:59,800
+为了改变View的尺寸 你可以为宽度设定不同值
 the different values that you can set for a size of a view is width.
 
 26
 00:00:59,800 --> 00:01:01,090
+高度和宽度可以用dp指定
 Fixed dp for width and height.
 
 27
 00:01:01,090 --> 00:01:02,910
+—— 没错 你也可以设定wrap_content
 &gt;&gt; Correct, you can also do wrap_content.
 
 28
 00:01:02,910 --> 00:01:04,986
+接下来我们将要尝试的是
 And the next one we're going to try out is
 
 29
 00:01:04,986 --> 00:01:06,780
+—— match_parent
 &gt;&gt; match_parent.
 
 30
